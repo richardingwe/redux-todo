@@ -10,7 +10,7 @@ const todoList = [{
 },
 {
   item: 'todo two',
-  done: false,
+  done: true,
   id: 7867
 },
 {
@@ -27,8 +27,8 @@ function App() {
         <div className="app__todoContainer">
           {todoList.map(todo => (<TodoItem name={todo.item} key={todo.id} done={todo.done} />))}
         </div>
+        <Input />
       </div>
-      <Input />
     </div>
   );
 }
