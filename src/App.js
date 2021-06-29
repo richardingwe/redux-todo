@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <div className="app__container">
         <div className="app__todoContainer">
-          {todoList.map(todo => (<TodoItem />))}
+          {todoList.map(todo => (<TodoItem name={todo.item} key={todo.id} done={todo.done} />))}
         </div>
       </div>
       <Input />
